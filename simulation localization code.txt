@@ -1,0 +1,35 @@
+from beamngpy import BeamNGpy, Scenario, Vehicle, angle_to_quat
+from time import sleep
+
+# Initialize BeamNGpy instance
+bng = BeamNGpy('localhost', 64256, home='C:\\Users\\ADMIN\\Desktop\\beamng\\BeamNG.tech.v0.31.2.0')
+
+# Launch BeamNG.tech
+bng.open()
+
+# Create a scenario
+scenario = Scenario('conklin_testing_facility', 'MIROS TROLLEY CRASHTEST')
+
+# Create the first vehicle (AI driven)
+vehicle1 = Vehicle('ego_vehicle', model='crash_cart', license='UTEM')
+scenario.add_vehicle(vehicle1, pos=(330.528, 259.865, 513.890), rot_quat=angle_to_quat((0, 1, 0)))
+
+# Create the second static vehicle
+static_vehicle = Vehicle('static_vehicle', model='pickup', license='STATIC')
+scenario.add_vehicle(static_vehicle, pos=(350.000, 260.000, 513.890), rot_quat=angle_to_quat((0, 0, 0)))
+
+# Place files defining our scenario for the simulator to read
+scenario.make(bng)
+
+# Load and start our scenario
+bng.scenario.load(scenario)
+bng.scenario.start()
+
+ vehicle.ai.set_mode
+
+
+
+# Set the velocity of the first vehicle
+target_speed_kph = 50
+target_speed_mps = target_speed_kph / 3.6  # Convert km/h to m/s
+vehicle1.set_velocity(target_speed_mps, dt=1.0)
