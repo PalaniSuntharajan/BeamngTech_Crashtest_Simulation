@@ -1,0 +1,12 @@
+passenger vehicle suspension: reading 1 -0.0394
+                                                 reading 2    -0.0909
+                                                  reading 3   -0.0553
+
+
+Original suspension:                reading 1 -0.3245
+                                                 reading 2    -0.3255
+                                                  reading 3   -0.3132
+
+50%  increased suspension parameters :  reading 1 -0.2660
+                                                                   reading 2    -0.2412
+                                                                   reading 3   -0.2103
