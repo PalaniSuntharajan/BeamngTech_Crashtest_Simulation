@@ -1,0 +1,43 @@
+cd C:\Users\ADMIN\Desktop
+
+python vehicle_logging.py
+
+python vehicle_logging_better.py
+
+python vehicle_logging2.py
+
+log3=perfect, no sensor attached
+
+log= sensor attached, no graph
+
+log4=sensor and graph
+
+log2=sensor graph and consatnt speed latest
+
+https://chatgpt.com/c/a0c531bb-c487-4ce4-8972-6e51f17edca3
+
+
+normal parameter  k1 1607.82 N/m    c1 491.11   3215.64kx2    1880.744 cx2
+
+  k1 1607.82 N/m
+"beamDampFast": 4491.11 Ns/m
+    "beamDampRebound": 491.11 Ns/m
+    "beamDampReboundFast": 245.555  Ns/m,  rebound fast x 0.5 to get it
+
+first impact= 11.135 seconds
+50 percent
+k2  4823.46
+beamDampFast: 736.665 Ns/m
+beamDampRebound: 736.665  Ns/m
+beamDampReboundFast: 368.3325  Ns/m
+
+
+
+1200kg Vauxhall ZAFIRA (2001)
+k3  36279
+
+beamDampFast: 2746.8 Ns/m
+beamDampRebound: 3924 Ns/m
+beamDampReboundFast: 1962  Ns/m
+
+(330.07, 347.660, 513.2), rot_quat=(0.7071, 0.7071, 0, 0))
